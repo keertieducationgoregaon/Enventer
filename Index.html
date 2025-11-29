@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Nexora Web | Premium Static & Dynamic Website Development</title>
-    <meta name="description" content="Custom Static & Dynamic Websites – Responsive, Fast, SEO-Ready. Starting at ₹1,599. Free Consultation."/>
+    <title>Enventer | Premium Static & Dynamic Website Development</title>
+    <meta name="description" content="Custom Static & Dynamic Websites – Fast, Responsive, SEO-Ready. Starting at ₹1,599 | Enventer – Your Trusted Web Partner"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -24,33 +24,29 @@
             background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
             color:white;
             text-align:center;
-            padding:5rem 0 7rem;
+            padding:6rem 0 8rem;
             position:relative;
             overflow:hidden;
         }
         header::after {
-            content:'';
-            position:absolute;
-            bottom:0; left:0; right:0;
-            height:200px;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%236366f1" fill-opacity="0.1" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,133.3C672,117,768,139,864,170.7C960,203,1056,245,1152,245.3C1248,245,1344,203,1392,181.3L1440,160L1440,320L0,320Z"></path></svg>') no-repeat center bottom;
+            content:''; position:absolute; bottom:0; left:0; right:0; height:220px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%236366f1" fill-opacity="0.12" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,133.3C672,117,768,139,864,170.7C960,203,1056,245,1152,245.3C1248,245,1344,203,1392,181.3L1440,160L1440,320L0,320Z"></path></svg>') center bottom no-repeat;
             background-size:cover;
         }
         h1 {
-            font-size:3.8rem;
+            font-size:4rem;
             font-weight:700;
-            margin-bottom:1rem;
             background:linear-gradient(90deg,#fff,#c4b5fd);
             -webkit-background-clip:text;
             background-clip:text;
             -webkit-text-fill-color:transparent;
         }
-        .tagline { font-size:1.5rem; opacity:0.9; margin:1.5rem 0 2.5rem; }
+        .tagline { font-size:1.6rem; opacity:0.9; margin:1.5rem 0 2.5rem; }
         .btn {
             display:inline-block;
             background:var(--primary);
             color:white;
-            padding:1rem 2.5rem;
+            padding:1rem 2.8rem;
             border-radius:50px;
             font-weight:600;
             text-decoration:none;
@@ -68,91 +64,24 @@
             margin-bottom:4rem;
             color:var(--dark);
         }
-        .grid {
-            display:grid;
-            grid-template-columns:repeat(auto-fit, minmax(340px,1fr));
-            gap:2.5rem;
-        }
+        .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(340px,1fr)); gap:2.5rem; }
         .card {
-            background:white;
-            border-radius:18px;
-            padding:2.5rem;
-            text-align:center;
-            box-shadow:0 10px 30px rgba(0,0,0,0.06);
-            transition:all 0.4s;
-            border:1px solid #e2e8f0;
+            background:white; border-radius:18px; padding:2.5rem; text-align:center;
+            box-shadow:0 10px 30px rgba(0,0,0,0.06); transition:all 0.4s; border:1px solid var(--border);
         }
-        .card:hover {
-            transform:translateY(-15px);
-            box-shadow:0 25px 50px rgba(99,102,241,0.15);
-            border-color:var(--primary);
-        }
-        .card h3 {
-            font-size:1.8rem;
-            margin:1.5rem 0 1rem;
-            color:var(--primary-dark);
-        }
-        .price {
-            font-size:2.2rem;
-            font-weight:700;
-            color:var(--primary);
-            margin:1.5rem 0;
-        }
+        .card:hover { transform:translateY(-15px); box-shadow:0 25px 50px rgba(99,102,241,0.15); border-color:var(--primary); }
+        .price { font-size:2.4rem; font-weight:700; color:var(--primary); margin:1.5rem 0; }
         .features { text-align:left; margin:1.5rem 0; }
-        .features li { margin:0.6rem 0; opacity:0.9; }
+        .features li { margin:0.7rem 0; }
 
-        /* Testimonials */
-        .testimonials-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-        .testimonial-card {
-            background: var(--light);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: left;
-            border-left: 4px solid var(--primary);
-        }
-        .testimonial-card p { font-style: italic; margin-bottom: 1rem; }
-        .testimonial-author { font-weight: 600; color: var(--gray); }
-
-        /* About */
-        .about-content { max-width: 800px; margin: 0 auto; text-align: center; }
-        .about-content ul { text-align: left; margin: 2rem 0; }
-        .why-list { list-style: none; }
-        .why-list li { margin: 1rem 0; padding-left: 1.5rem; position: relative; }
-        .why-list li::before { content: '✓'; color: var(--primary); font-weight: bold; position: absolute; left: 0; }
-
-        /* Blog Teasers */
-        .blog-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-        .blog-card {
-            background: var(--light);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-        }
-        .blog-card h4 { color: var(--primary-dark); margin-bottom: 1rem; }
-
-        /* FAQs */
-        .faq-item { margin: 2rem 0; }
-        .faq-question { font-weight: 600; margin-bottom: 0.5rem; cursor: pointer; }
-        .faq-answer { opacity: 0.8; }
-
-        .contact {
-            background:var(--dark);
-            color:white;
-            text-align:center;
-        }
+        .contact { background:var(--dark); color:white; text-align:center; }
         .contact h2 { color:white; }
 
-        footer {
-            background:#0f172a;
-            color:#94a3b8;
-            text-align:center;
-            padding:2rem 0;
-        }
+        footer { background:#0f172a; color:#94a3b8; text-align:center; padding:2.5rem 0; }
 
         @media (max-width:768px) {
-            h1 { font-size:2.8rem; }
+            h1 { font-size:3rem; }
             .section-title { font-size:2.3rem; }
-            .grid { gap: 2rem; }
         }
     </style>
 </head>
@@ -160,204 +89,68 @@
 
     <header>
         <div class="container" style="position:relative;z-index:2;">
-            <h1>Nexora Web</h1>
-            <p class="tagline">Unlock Your Online Potential<br>Expert Static & Dynamic Website Development</p>
-            <p style="font-size:1.2rem; opacity:0.9; margin-bottom:2rem;">Drive traffic, increase visibility, and grow your business with custom websites.</p>
-            <a href="#contact" class="btn">Get a Free Consultation</a>
+            <h1>Enventer</h1>
+            <p class="tagline">Custom Static & Dynamic Websites That Grow Your Business</p>
+            <p style="font-size:1.2rem;opacity:0.9;margin-bottom:2rem;">Fast • Responsive • SEO-Ready • Affordable</p>
+            <a href="#contact" class="btn">Get Free Consultation →</a>
         </div>
     </header>
 
-    <!-- Services -->
+    <!-- Pricing Plans -->
     <section class="alt">
         <div class="container">
-            <h2 class="section-title">Our Web Development Services</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Static Websites</h3>
-                    <p>Lightning-fast, responsive sites perfect for portfolios, landing pages, and brochures. Built with HTML/CSS/JS for maximum speed and SEO.</p>
-                    <ul class="features">
-                        <li>✓ Custom, mobile-friendly design</li>
-                        <li>✓ Fast loading & SEO optimized</li>
-                        <li>✓ Contact forms & WhatsApp integration</li>
-                        <li>✓ Free hosting setup for 1 year</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Dynamic Websites / Web Apps</h3>
-                    <p>Interactive sites with databases, user logins, and admin panels. Powered by Python (Django/Flask), Java, or JS frameworks for e-commerce, blogs, and dashboards.</p>
-                    <ul class="features">
-                        <li>✓ User authentication & content management</li>
-                        <li>✓ Database integration (MySQL/Firebase)</li>
-                        <li>✓ Payment gateways & APIs</li>
-                        <li>✓ Scalable & secure architecture</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing -->
-    <section>
-        <div class="container">
-            <h2 class="section-title">Choose Your Plan</h2>
+            <h2 class="section-title">Choose Your Perfect Plan</h2>
             <div class="grid">
                 <div class="card">
                     <h3>Easy Plan</h3>
                     <div class="price">₹1,599</div>
                     <ul class="features">
-                        <li>✓ Blogger-based static site</li>
-                        <li>✓ Custom domain setup</li>
-                        <li>✓ Basic responsive design</li>
-                        <li>✓ 1 free add-on (e.g., form)</li>
-                        <li>✓ Free styling & 3-day delivery</li>
+                        <li>✓ Blogger-based Static Site</li>
+                        <li>✓ Custom Domain Setup</li>
+                        <li>✓ Responsive Design</li>
+                        <li>✓ Basic SEO + 1 Free Add-on</li>
+                        <li>✓ 3-Day Delivery</li>
                     </ul>
-                    <a href="#contact" class="btn" style="margin-top:1.5rem;">Get Started</a>
+                    <a href="#contact" class="btn" style="margin-top:2rem;">Order Now</a>
                 </div>
+
                 <div class="card">
                     <h3>Starter Static</h3>
                     <div class="price">₹7,999</div>
                     <ul class="features">
-                        <li>✓ 1-page responsive site</li>
-                        <li>✓ Content upload & 3 extensions</li>
-                        <li>✓ Basic e-commerce (1 product)</li>
-                        <li>✓ Hosting + social icons</li>
-                        <li>✓ 1 free add-on & 5-day delivery</li>
+                        <li>✓ 1-Page Responsive Website</li>
+                        <li>✓ Content Upload + Contact Form</li>
+                        <li>✓ 3 Extensions/Plugins</li>
+                        <li>✓ Free Hosting 1 Year</li>
+                        <li>✓ 5-Day Delivery</li>
                     </ul>
-                    <a href="#contact" class="btn" style="margin-top:1.5rem;">Get Started</a>
+                    <a href="#contact" class="btn" style="margin-top:2rem;">Order Now</a>
                 </div>
+
                 <div class="card">
                     <h3>Business Dynamic</h3>
                     <div class="price">₹24,999</div>
                     <ul class="features">
-                        <li>✓ 5 pages + admin panel</li>
-                        <li>✓ Basic SEO & 5 plugins</li>
-                        <li>✓ 5-product e-commerce</li>
-                        <li>✓ Payments & hosting optimization</li>
-                        <li>✓ 1 free add-on & 10-day delivery</li>
+                        <li>✓ Up to 5 Pages + Admin Panel</li>
+                        <li>✓ Database & User Login</li>
+                        <li>✓ 5 Plugins + Payment Gateway</li>
+                        <li>✓ E-commerce (5 Products)</li>
+                        <li>✓ 10-Day Delivery</li>
                     </ul>
-                    <a href="#contact" class="btn" style="margin-top:1.5rem;">Choose Plan</a>
+                    <a href="#contact" class="btn" style="margin-top:2rem;">Order Now</a>
                 </div>
+
                 <div class="card">
                     <h3>Premium Dynamic</h3>
                     <div class="price">₹44,999</div>
                     <ul class="features">
-                        <li>✓ 10 pages + advanced features</li>
-                        <li>✓ Full database & 7 plugins</li>
-                        <li>✓ 10-product e-commerce</li>
-                        <li>✓ APIs, support & speed tweaks</li>
-                        <li>✓ 1 free add-on & 15-day delivery</li>
+                        <li>✓ Up to 10 Pages + Full CMS</li>
+                        <li>✓ Advanced Features & APIs</li>
+                        <li>✓ 10 Products E-commerce</li>
+                        <li>✓ Priority Support + Training</li>
+                        <li>✓ 15-Day Delivery</li>
                     </ul>
-                    <a href="#contact" class="btn" style="margin-top:1.5rem;">Choose Plan</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="alt">
-        <div class="container">
-            <h2 class="section-title">What Clients Say</h2>
-            <div class="grid testimonials-grid">
-                <div class="testimonial-card">
-                    <p>"Nexora transformed our outdated site into a sleek, responsive platform. Traffic and leads have doubled!"</p>
-                    <div class="testimonial-author">— Priya S., CEO of GreenTech Solutions</div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Their dynamic web app put us on the map—now we manage e-commerce seamlessly."</p>
-                    <div class="testimonial-author">— Mark R., Founder of Local Pro Media</div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Responsive, creative, and aligned with our goals. Highly recommended for static sites!"</p>
-                    <div class="testimonial-author">— Aditi B., Head of Marketing at NovaCare</div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"From design to launch, the process was seamless. Couldn't be happier with our dynamic dashboard."</p>
-                    <div class="testimonial-author">— Raj M., Co-Founder at EduLeap</div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Elevated our static portfolio to the next level—users love the experience!"</p>
-                    <div class="testimonial-author">— Sneha K., Product Manager at FitZen</div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"60% increase in engagement after the redesign. Incredible work on our dynamic site."</p>
-                    <div class="testimonial-author">— Arjun D., Digital Lead at TravelGo</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section class="alt">
-        <div class="container">
-            <h2 class="section-title">About Nexora Web</h2>
-            <div class="about-content">
-                <p>Nexora Web is your full-service partner for static and dynamic website development. Founded on creativity and driven by results, I'm a passionate full-stack developer specializing in custom solutions that perform. From startups to brands, I build visually compelling, technically robust websites.</p>
-                <h3 style="margin:2rem 0 1rem; color:var(--primary-dark);">Why Choose Me?</h3>
-                <ul class="why-list">
-                    <li>Client-focused approach with unlimited revisions</li>
-                    <li>Data-driven designs for better conversions</li>
-                    <li>Transparent communication in English/Hindi</li>
-                    <li>Proven track record in web tech</li>
-                    <li>Long-term support & maintenance</li>
-                </ul>
-                <h3 style="margin:2rem 0 1rem; color:var(--primary-dark);">Our Culture</h3>
-                <p>Collaboration, innovation, and integrity. I thrive on bold ideas, embrace challenges, and deliver meaningful digital solutions.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Teasers -->
-    <section>
-        <div class="container">
-            <h2 class="section-title">Insights & Tips</h2>
-            <div class="grid blog-grid">
-                <div class="blog-card">
-                    <h4>How Static Websites Boost Your Speed in 2025</h4>
-                    <p>Explore trends in fast-loading sites that transform user experience and SEO.</p>
-                    <a href="#" style="color:var(--primary); text-decoration:none;">Read More →</a>
-                </div>
-                <div class="blog-card">
-                    <h4>Dynamic Web Apps: A Guide to Scalable Development</h4>
-                    <p>Discover how databases and APIs can drive creativity in your projects.</p>
-                    <a href="#" style="color:var(--primary); text-decoration:none;">Read More →</a>
-                </div>
-                <div class="blog-card">
-                    <h4>Choosing Between Static & Dynamic: Best Practices</h4>
-                    <p>Tips to lead your web project and maintain productivity from start to launch.</p>
-                    <a href="#" style="color:var(--primary); text-decoration:none;">Read More →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQs -->
-    <section class="alt">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div style="max-width:800px; margin:0 auto;">
-                <div class="faq-item">
-                    <div class="faq-question">What industries do you work with?</div>
-                    <div class="faq-answer">I serve diverse sectors like tech, e-commerce, education, healthcare, and portfolios—tailored to your needs.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Do you offer custom website design?</div>
-                    <div class="faq-answer">Yes! Every site is designed from scratch to match your brand and goals—static or dynamic.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">How long does it take to build a website?</div>
-                    <div class="faq-answer">Timelines vary: 3–5 days for static, 7–15 days for dynamic. Free consultation to estimate yours.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Do you provide ongoing support?</div>
-                    <div class="faq-answer">Absolutely—maintenance packages for updates, security, and performance tweaks post-launch.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Static vs. Dynamic: Which for me?</div>
-                    <div class="faq-answer">Static for speed/simple sites; dynamic for interactive features like e-commerce. Let's discuss!</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Send to WhatsApp 👉</div>
-                    <div class="faq-answer">Quick query? Chat now for instant advice.</div>
+                    <a href="#contact" class="btn" style="margin-top:2rem;">Order Now</a>
                 </div>
             </div>
         </div>
@@ -366,150 +159,21 @@
     <!-- Contact -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Ready to Get Started?</h2>
-            <p style="font-size:1.3rem;max-width:700px;margin:2rem auto;">
-                Free consultation • Unlimited revisions • 100% satisfaction. Let's build your dream site!
-            </p>
-            <div style="margin:3rem 0;">
-                <a href="https://wa.me/919999999999" class="btn whatsapp-btn" style="font-size:1.2rem;padding:1.1rem 3rem;">Chat on WhatsApp</a>
-                <a href="mailto:hello@nexoraweb.in" class="btn" style="background:#1e293b;margin-left:1rem;">Send Email</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2025 Nexora Web • Premium Static & Dynamic Web Development • Made with ❤️ in India</p>
-        </div>
-    </footer>
-</body>
-    </html>        .alt { background:#fff; }
-        .section-title {
-            text-align:center;
-            font-size:2.8rem;
-            margin-bottom:4rem;
-            color:var(--dark);
-        }
-        .grid {
-            display:grid;
-            grid-template-columns:repeat(auto-fit, minmax(340px,1fr));
-            gap:2.5rem;
-        }
-        .card {
-            background:white;
-            border-radius:18px;
-            padding:2.5rem;
-            text-align:center;
-            box-shadow:0 10px 30px rgba(0,0,0,0.06);
-            transition:all 0.4s;
-            border:1px solid #e2e8f0;
-        }
-        .card:hover {
-            transform:translateY(-15px);
-            box-shadow:0 25px 50px rgba(99,102,241,0.15);
-            border-color:var(--primary);
-        }
-        .card h3 {
-            font-size:1.8rem;
-            margin:1.5rem 0 1rem;
-            color:var(--primary-dark);
-        }
-        .price {
-            font-size:2.2rem;
-            font-weight:700;
-            color:var(--primary);
-            margin:1.5rem 0;
-        }
-        .features { text-align:left; margin:1.5rem 0; }
-        .features li { margin:0.6rem 0; opacity:0.9; }
-
-        .contact {
-            background:var(--dark);
-            color:white;
-            text-align:center;
-        }
-        .contact h2 { color:white; }
-
-        footer {
-            background:#0f172a;
-            color:#94a3b8;
-            text-align:center;
-            padding:2rem 0;
-        }
-
-        @media (max-width:768px) {
-            h1 { font-size:2.8rem; }
-            .section-title { font-size:2.3rem; }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="container" style="position:relative;z-index:2;">
-            <h1>Nexora Web</h1>
-            <p class="tagline">Professional Static & Dynamic Websites<br>Fast • Beautiful • Affordable</p>
-            <a href="#contact" class="btn">Get Your Website Now →</a>
-        </div>
-    </header>
-
-    <section class="alt">
-        <div class="container">
-            <h2 class="section-title">Web Development Services</h2>
-            <div class="grid">
-                <!-- Static Website -->
-                <div class="card">
-                    <h3>Static Website</h3>
-                    <div class="price">Starting ₹8,999</div>
-                    <ul class="features">
-                        <li>✓ Modern, Responsive Design</li>
-                        <li>✓ Lightning Fast Loading</li>
-                        <li>✓ SEO Optimized</li>
-                        <li>✓ Mobile & Tablet Friendly</li>
-                        <li>✓ Contact Form + WhatsApp Chat</li>
-                        <li>✓ Free Hosting for 1 Year</li>
-                        <li>✓ Portfolio, Business, Landing Page</li>
-                        <li>✓ 3–5 Days Delivery</li>
-                    </ul>
-                    <a href="#contact" class="btn" style="margin-top:1.5rem;background:var(--primary-dark);">Order Static Site</a>
-                </div>
-
-                <!-- Dynamic Website -->
-                <div class="card">
-                    <h3>Dynamic Website / Web App</h3>
-                    <div class="price">Starting ₹24,999</div>
-                    <ul class="features">
-                        <li>✓ Admin Panel (Add/Edit/Delete)</li>
-                        <li>✓ User Login / Registration</li>
-                        <li>✓ Database (MySQL / Firebase)</li>
-                        <li>✓ E-commerce, Blog, Dashboard</li>
-                        <li>✓ Payment Gateway Integration</li>
-                        <li>✓ API Integration</li>
-                        <li>✓ Python Django / Flask / Java Spring Boot</li>
-                        <li>✓ 7–15 Days Delivery</li>
-                    </ul>
-                    <a href="#contact" class="btn" style="margin-top:1.5rem;background:var(--primary-dark);">Order Dynamic Site</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
             <h2 class="section-title">Ready to Launch Your Website?</h2>
-            <p style="font-size:1.3rem;max-width:700px;margin:2rem auto;">
+            <p style="font-size:1.4rem;max-width:700px;margin:2rem auto;">
                 Free consultation • Unlimited revisions • 100% satisfaction guaranteed
             </p>
             <div style="margin:3rem 0;">
-                <a href="https://wa.me/919999999999" class="btn" style="background:#25d366;font-size:1.2rem;padding:1.1rem 3rem;">Chat on WhatsApp</a>
-                <a href="mailto:hello@nexoraweb.in" class="btn" style="background:#1e293b;margin-left:1rem;">Send Email</a>
+                <a href="https://wa.me/919999999999" class="btn whatsapp-btn" style="font-size:1.3rem;padding:1.2rem 3.5rem;">Chat on WhatsApp</a>
+                <a href="mailto:hello@enventer.in" class="btn" style="background:#1e293b;margin-left:1rem;">Send Email</a>
             </div>
+            <p style="margin-top:2rem;opacity:0.8;">Replace the WhatsApp number & email above with yours!</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>© 2025 Nexora Web • Premium Web Development Services • Made with ❤️ in India</p>
+            <p>© 2025 Enventer • Premium Web Development Services • Made with ❤️ in India</p>
         </div>
     </footer>
 </body>
